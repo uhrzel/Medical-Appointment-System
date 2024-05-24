@@ -52,7 +52,7 @@
     if ($_POST) {
 
         $email = $_POST['useremail'];
-        $password = $_POST['userpassword'];
+        $password = md5($_POST['userpassword']);
 
         $error = '<label for="promter" class="form-label"></label>';
 
